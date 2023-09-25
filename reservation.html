@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>펜션 예약 서비스</h1>
+<form method="post" action="/edu/reservation">
+  예약자명 : <input type="text" name="vname"><br>
+  예약암호: <input type="password" name="pw"><br>
+  룸선택:<input type="radio" name="room" value="둘리">둘리
+  <input type="radio" name="room" value="희동">희동
+  <input type="radio" name="room" value="도우너">도우너
+  <input type="radio" name="room" value="또치">또치<br>
+  추가 요청사항 : <input type="checkbox" name="options" value="바베큐">바베큐
+<input type="checkbox" name="options" value="수영장">수영장
+<input type="checkbox" name="options" value="낚시">낚시
+<input type="checkbox" name="options" value="조식">조식<br>
+예약날짜:<input type="date" id="date" name="date" max="2077-06-20" min="1990-06-05" value="2023-09-25">
+<button type="submit">보내기</button>
+<button type="reset">다시작성하기</button>
+</form>
+</body>
+</html>
